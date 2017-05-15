@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Head from 'next/head';
-import stylesheet from 'style/styles.scss'
+import stylesheet from 'static/styles.scss'
 
 const AppLayout = (props) => (
   <div>

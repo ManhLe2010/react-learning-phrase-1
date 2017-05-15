@@ -1,4 +1,4 @@
-import AppLayout from '../components/AppLayout';
+import AppLayout from '../components/MasterLayout';
 
 const Donate = () => (
   <AppLayout>
