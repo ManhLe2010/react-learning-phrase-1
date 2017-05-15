@@ -14,7 +14,7 @@ const Index = () => (
             <div className="card-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ipsum...
             </div>
-            <Link href="/about"><button className="btn btn-primary">About</button></Link>
+            <Link href="/about"><button className="btn btn-success mt-2">Read more</button></Link>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ const Index = () => (
             <div className="card-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ipsum...
             </div>
-            <Link href="/users"><button className="btn btn-primary">Users list</button></Link>
+            <Link href="/users"><button className="btn btn-warning mt-2">See more</button></Link>
           </div>
         </div>
       </div>

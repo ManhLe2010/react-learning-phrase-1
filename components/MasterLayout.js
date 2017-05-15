@@ -10,6 +10,7 @@ const MasterLayout = (props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       {/* Global stylesheet */}
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+      <title>NextJS Learning</title>
     </Head>
     <div>
       {/* Local stylesheet */}
