@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import stylesheet from './UsersList.scss';
 
+/**
+ * Simple example of GET data
+ */
 class UsersList extends Component {
 
   constructor (props) {

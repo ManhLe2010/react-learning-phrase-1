@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import Link from 'next/link';
 
+/**
+ * Simple example of Header using Reacstrap
+ * More documents at https://reactstrap.github.io/
+ */
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +27,7 @@ class Header extends React.Component {
       <div>
         <Navbar color="faded" light toggleable>
           <NavbarToggler right onClick={this.toggle} />
-          <Link href="/"><NavbarBrand>reactstrap</NavbarBrand></Link>
+          <Link href="/"><NavbarBrand>Reactstrap Navbar</NavbarBrand></Link>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="" navbar>
               <NavItem>
