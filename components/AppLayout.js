@@ -1,7 +1,7 @@
 const AppLayout = (props) => (
-    <div>
-        {props.children}
-    </div>
+  <div>
+    {props.children}
+  </div>
 )
 
 export default AppLayout;
