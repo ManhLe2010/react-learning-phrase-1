@@ -24,7 +24,7 @@ class UsersList extends Component {
   }
 
   render() {
-    var users = this.state.users.map(user => (
+    let users = this.state.users.map(user => (
        	<div className="user" key={user.id}>
        		<div className="name">Name: {user.name}</div>
        		<div className="email">Email: {user.email}</div>

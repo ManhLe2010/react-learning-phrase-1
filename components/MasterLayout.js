@@ -20,7 +20,7 @@ const MasterLayout = (props) => (
     {/* End customize head tag*/}
     {/* Page body */}
     <div>
-      <Header></Header>
+      <Header />
       {/* Import Local stylesheet */}
       <style dangerouslySetInnerHTML={{ __html: mastersheet }}></style>
       {/* Use some bootstrap css classes */}

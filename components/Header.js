@@ -39,6 +39,9 @@ class Header extends React.Component {
               <NavItem>
                 <Link href="/users"><NavLink>Users</NavLink></Link>
               </NavItem>
+              <NavItem>
+                <Link href="/quotes"><NavLink>Quotes Machine</NavLink></Link>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
