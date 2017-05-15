@@ -1,9 +1,9 @@
 import AppLayout from '../components/AppLayout';
 
-const Index = () => (
+const Donate = () => (
   <AppLayout>
-    <div>Index page</div>
+    <div>Donate page</div>
   </AppLayout>
 )
 
-export default Index;
+export default Donate;

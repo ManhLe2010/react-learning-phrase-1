@@ -1,9 +1,9 @@
 import AppLayout from '../components/AppLayout';
 
-const Index = () => (
+const About = () => (
   <AppLayout>
-    <div>Index page</div>
+    <div>Hell Vinh</div>
   </AppLayout>
 )
 
-export default Index;
+export default About;
