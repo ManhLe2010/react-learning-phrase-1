@@ -21,24 +21,24 @@ class Header extends React.Component {
   render () {
     return (
       <div>
-      <Navbar color="faded" light toggleable>
-        <NavbarToggler right onClick={this.toggle} />
-        <Link href="/"><NavbarBrand>reactstrap</NavbarBrand></Link>
-        <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="" navbar>
-            <NavItem>
-              <Link href="/"><NavLink>Home</NavLink></Link>
-            </NavItem>
-            <NavItem>
-              <Link href="/about"><NavLink>About</NavLink></Link>
-            </NavItem>
-            <NavItem>
-              <Link href="/donate"><NavLink>Donate</NavLink></Link>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
+        <Navbar color="faded" light toggleable>
+          <NavbarToggler right onClick={this.toggle} />
+          <Link href="/"><NavbarBrand>reactstrap</NavbarBrand></Link>
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="" navbar>
+              <NavItem>
+                <Link href="/"><NavLink>Home</NavLink></Link>
+              </NavItem>
+              <NavItem>
+                <Link href="/about"><NavLink>About</NavLink></Link>
+              </NavItem>
+              <NavItem>
+                <Link href="/users"><NavLink>Users</NavLink></Link>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     );
   }
 }
