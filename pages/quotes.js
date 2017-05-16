@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Link from 'next/link';
 import axios from 'axios';
 import MasterLayout from '../components/MasterLayout';
 import { Card, Button, CardHeader, CardFooter, CardBlock,
@@ -14,34 +15,38 @@ class Quotes extends Component {
     this.state = {
       quotes: [],
       title: '',
-      text: ''
+      text: '',
+      count: 1
     };
     this.handleQuotes = this.handleQuotes.bind(this);
   }
 
   componentDidMount() {
     axios.get('https://jsonplaceholder.typicode.com/posts').then((response) => {
-      this.setState({quotes: response.data});
-      console.log(this.state.quotes);
+      this.setState({
+        quotes: response.data,
+        title: response.data[0].title,
+        text: response.data[0].body
+      });
     });
   }
 
   handleQuotes() {
-    let count = 0;
-    for(let i = 0; i < this.state.quotes.length; i++) {
-      if(i == count) {
+    this.setState((prevState) => ({count: parseInt(prevState.count + 1)}));
+    for(let i = 1; i < this.state.quotes.length; i++) {
+      if(i == this.state.count) {
         this.setState(
           {
-            title: this.state.quotes[i].id,
-            text: this.state.quotes[i].text
+            title: this.state.quotes[i].title,
+            text: this.state.quotes[i].body
           }
         );
       }
-      count++;
     }
   }
 
   render() {
+    let twitterLink = "https://twitter.com/intent/tweet?text=" + this.state.text;
     return (
       <MasterLayout>
         <div className="individual-card">
@@ -54,6 +59,12 @@ class Quotes extends Component {
             </CardBlock>
             <CardFooter>
               <Button onClick={this.handleQuotes}>New</Button>
+              <a href={twitterLink}>
+                <Button>Icon</Button>
+              </a>
+              <a href="https://twitter.com/dungle1811">
+                <Button>Follow me</Button>
+              </a>
             </CardFooter>
           </Card>
         </div>

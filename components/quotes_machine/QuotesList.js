@@ -10,8 +10,10 @@ class QuotesList extends Component {
   render() {
     const quotes = this.props.quotes.map((quote) =>
       <div key={quote.id}>
-        <div>{quote.id}</div>
-        <div>{quote.title}</div>
+        <div><strong>{quote.id}</strong></div>
+        <div><strong><i>{quote.title}</i></strong></div>
+        <div>{quote.body}</div>
+        <hr></hr>
       </div>
     );
     return (
