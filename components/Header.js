@@ -6,7 +6,7 @@ import Link from 'next/link';
  * Simple example of Header using Reacstrap
  * More documents at https://reactstrap.github.io/
  */
-class Header extends React.Component {
+class Header extends Component {
   constructor(props) {
     super(props);
 

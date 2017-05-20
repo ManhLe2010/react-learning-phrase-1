@@ -1,3 +1,4 @@
+import React from 'react';
 import MasterLayout from '../components/MasterLayout';
 import Link from 'next/link';
 

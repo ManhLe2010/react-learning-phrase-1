@@ -1,3 +1,4 @@
+import React from 'react';
 import MasterLayout from '../components/MasterLayout';
 
 const About = () => (
@@ -15,6 +16,6 @@ const About = () => (
       </p>
     </div>
   </MasterLayout>
-)
+);
 
 export default About;

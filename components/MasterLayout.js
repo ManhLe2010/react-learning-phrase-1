@@ -31,6 +31,6 @@ const MasterLayout = (props) => (
       </div>
     </div>
   </div>
-)
+);
 
 export default MasterLayout;
