@@ -6,9 +6,9 @@
   "author": "lednhatkhanh <lednhatkhanh@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "gulp copy && next",
+    "build": "gulp copy && next build",
+    "start": "gulp copy && next start"
   },
   "dependencies": {
     "autoprefixer": "6.7.6",
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0",
-    "eslint-plugin-react": "^7.0.1"
+    "eslint-plugin-react": "^7.0.1",
+    "gulp": "^3.9.1"
   }
 }

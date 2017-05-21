@@ -32,5 +32,10 @@
         ],
         "no-console": "off",
         "react/prop-types": "warn"
+    },
+    "globals": {
+        "document": true,
+        "window": true,
+        "require": true
     }
 }
