@@ -15,7 +15,7 @@ const MasterLayout = (props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       {/* Import Global stylesheet */}
       <style dangerouslySetInnerHTML={{ __html: vendorsheet }} />
-      <title>NextJS Learning</title>
+      <title>{process.env.APP_NAME}</title>
     </Head>
     {/* End customize head tag*/}
     {/* Page body */}

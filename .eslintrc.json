@@ -36,6 +36,7 @@
     "globals": {
         "document": true,
         "window": true,
-        "require": true
+        "require": true,
+        "process": true
     }
 }
