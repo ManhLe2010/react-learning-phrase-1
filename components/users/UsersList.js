@@ -25,12 +25,12 @@ class UsersList extends Component {
 
   render() {
     var users = this.state.users.map(user => (
-       	<div className="user" key={user.id}>
-       		<div className="name">Name: {user.name}</div>
-       		<div className="email">Email: {user.email}</div>
-       		<div className="phone">Phone: {user.phone}</div>
-       		<div className="company">Company: {user.company.name}</div>
-    		</div>
+      <div className="user" key={user.id}>
+        <div className="name">Name: {user.name}</div>
+        <div className="email">Email: {user.email}</div>
+        <div className="phone">Phone: {user.phone}</div>
+        <div className="company">Company: {user.company.name}</div>
+      </div>
     ));
     return (
       <div>
