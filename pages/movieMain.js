@@ -1,11 +1,12 @@
 import React from 'react';
 import MasterLayout from '../components/MasterLayout';
-import TestList from '../components/users/TestList';
+import Main from '../components/movie/Main';
 
-const Test = () => (
+
+const MaihMovie = () => (
   <MasterLayout>
-    <TestList></TestList>
+    <Main></Main>
   </MasterLayout>
 );
 
-export default Test;
+export default MaihMovie;

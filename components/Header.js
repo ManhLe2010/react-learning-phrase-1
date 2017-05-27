@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import Link from 'next/link';
+import stylesheet from './movie/Main.scss';
 
 /**
  * Simple example of Header using Reacstrap
@@ -25,25 +26,14 @@ class Header extends Component {
   render () {
     return (
       <div>
-        <Navbar color="faded" light toggleable>
+        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+        <Navbar color="red" light toggleable>
           <NavbarToggler right onClick={this.toggle} />
           <Link href="/"><NavbarBrand>Reactstrap Navbar</NavbarBrand></Link>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="" navbar>
               <NavItem>
-                <Link href="/"><NavLink>Home</NavLink></Link>
-              </NavItem>
-              <NavItem>
-                <Link href="/about"><NavLink>About</NavLink></Link>
-              </NavItem>
-              <NavItem>
-                <Link href="/users"><NavLink>Users</NavLink></Link>
-              </NavItem>
-              <NavItem>
-                <Link href="/test"><NavLink>Test</NavLink></Link>
-              </NavItem>
-              <NavItem>
-                <Link href="/search"><NavLink>Search</NavLink></Link>
+                <Link href="/movieMain"><NavLink>Movie</NavLink></Link>
               </NavItem>
             </Nav>
           </Collapse>
@@ -54,3 +44,16 @@ class Header extends Component {
 }
 
 export default Header;
+
+// <NavItem>
+//   <Link href="/"><NavLink>Home</NavLink></Link>
+// </NavItem>
+// <NavItem>
+//   <Link href="/about"><NavLink>About</NavLink></Link>
+// </NavItem>
+// <NavItem>
+//     <Link href="/users"><NavLink>Users</NavLink></Link>
+//   </NavItem>
+//   <NavItem>
+//     <Link href="/test"><NavLink>Test</NavLink></Link>
+//   </NavItem>

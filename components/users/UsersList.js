@@ -20,7 +20,7 @@ class UsersList extends Component {
         this.setState({
           users: response.data
         });
-      })
+      });
   }
 
   render() {
